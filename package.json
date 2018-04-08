@@ -1,0 +1,45 @@
+{
+  "name": "findingwarmth",
+  "version": "1.0.0",
+  "description": "Eugene warming",
+  "productName": "Finding Warmth",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "20i",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "functions:test": "cd functions && npm run shell",
+    "functions:deploy": "firebase deploy --only functions",
+    "start": "quasar dev",
+    "deploy": "quasar build && firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.5",
+    "mailgun-js": "^0.16.0",
+    "moment": "^2.22.0",
+    "quasar-framework": "^0.15.10",
+    "shrimp-vue-components": "^1.2.47",
+    "vuelidate": "^0.6.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-vue": "^4.4.0",
+    "quasar-cli": "^0.15.14"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
